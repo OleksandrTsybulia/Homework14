@@ -1,0 +1,23 @@
+@use '../utils/vars';
+@use '../utils/mixin';
+
+#main-information {
+  background-color: vars.$background-dark;
+  padding: 40px 0;
+  .container {
+    display: flex;
+  }
+}
+.main-information_about {
+  width: 450px;
+  margin-right: 40px;
+
+  h1 {
+    color: vars.$text-color-light;
+    @include mixin.font-margin(48px, 15px);
+  }
+  p {
+    color: #aab5ae;
+    line-height: 20px;
+  }
+}

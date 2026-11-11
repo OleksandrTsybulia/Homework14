@@ -1,0 +1,31 @@
+@use '../utils/vars';
+
+header {
+  background-color: vars.$background-dark-second;
+  .container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+}
+.site-navigation_list {
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  a {
+    display: block;
+    padding: 40px 0;
+    color: vars.$text-color-light;
+
+    transition:
+      transform 200ms ease-in-out,
+      color 200ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+      color: vars.$nav-link-hover;
+    }
+  }
+}

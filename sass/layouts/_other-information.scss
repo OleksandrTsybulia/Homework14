@@ -1,0 +1,18 @@
+@use '../utils/vars';
+@use '../utils/placeholder';
+
+#other-information {
+  padding: 40px 0;
+  background-color: vars.$text-color-light;
+
+  h2 {
+    @extend %heading-set;
+  }
+
+  p {
+    #other-information p {
+      color: vars.$background-dark-second;
+      line-height: 20px;
+    }
+  }
+}

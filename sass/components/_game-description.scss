@@ -1,0 +1,22 @@
+@use '../utils/vars';
+
+.game-description {
+  display: flex;
+  flex-direction: row-reverse;
+
+  &_main {
+    overflow: scroll;
+    width: auto;
+    height: 300px;
+    margin-left: 50px;
+  }
+
+  &_about {
+    border: 2px solid;
+    background-color: #aab5ae;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    margin-bottom: 10px;
+  }
+}

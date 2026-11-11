@@ -1,0 +1,32 @@
+@use '../utils/vars';
+@use '../utils/mixin';
+
+#hobby-information {
+  background-color: vars.$background-dark;
+  height: 500px;
+  padding: 40px 0;
+
+  h2 {
+    color: vars.$text-color-light;
+    @include mixin.font-margin(36px, 15px);
+  }
+  p {
+    color: #aab5ae;
+  }
+  a {
+    color: vars.$links-color;
+    transition:
+      font-weight 0.5s ease-out,
+      color 0.5s ease-out;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+      color: vars.$hobby-link-hover;
+    }
+  }
+}
+
+.hobby-information_about {
+  margin-bottom: 15px;
+}

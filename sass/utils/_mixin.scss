@@ -1,0 +1,4 @@
+@mixin font-margin($size, $bottom) {
+  font-size: $size;
+  margin-bottom: $bottom;
+}

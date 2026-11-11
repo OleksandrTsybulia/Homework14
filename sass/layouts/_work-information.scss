@@ -1,0 +1,75 @@
+@use '../utils/vars';
+@use '../utils/placeholder';
+@use '../utils/mixin';
+
+#work-information {
+  padding: 40px 0;
+  background-color: vars.$text-color-light;
+
+  .container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+}
+.work-information_about {
+  width: 460px;
+
+  a {
+    color: vars.$links-color;
+    transition: color 0.5s ease-in;
+
+    &:hover,
+    &:focus {
+      color: vars.$work-link-hover;
+    }
+  }
+  h2 {
+    @extend %heading-set;
+  }
+  p {
+    color: vars.$background-dark-second;
+    line-height: 20px;
+  }
+}
+.work-information_fact {
+  background-color: vars.$background-dark-second;
+  padding: 5px 10px;
+  overflow: hidden;
+  border: 6px solid;
+  animation: motion 0.5s infinite;
+
+  h2 {
+    color: vars.$text-color-light;
+    @include mixin.font-margin(20px, 15px);
+    font-weight: 700;
+  }
+
+  p {
+    color: #aab5ae;
+    line-height: 20px;
+  }
+}
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+    border-color: #fb3737;
+  }
+  25% {
+    border-style: dashed;
+    border-color: #fa0000;
+  }
+  50% {
+    border-style: dashed;
+    border-color: #4b57fb;
+  }
+  75% {
+    border-style: dashed;
+    border-color: #0011ff;
+  }
+  100% {
+    border-style: dotted;
+    border-color: #000ba8;
+  }
+}

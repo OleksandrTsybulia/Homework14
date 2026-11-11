@@ -1,0 +1,31 @@
+@use '../utils/vars';
+@use '../utils/mixin';
+
+#contact-us {
+  background-color: vars.$background-dark;
+  padding: 40px 0;
+
+  p {
+    color: vars.$text-color-light;
+    @include mixin.font-margin(24px, 15px);
+  }
+
+  a {
+    color: vars.$links-color;
+    border: 1px solid vars.$background-links;
+    border-radius: 4px;
+    transition:
+      color 0.5s ease-in,
+      background-color 0.5s ease-in;
+
+    &:hover,
+    &:focus {
+      color: vars.$text-color-light;
+      background-color: vars.$nav-link-hover;
+    }
+  }
+}
+
+address :first-child {
+  margin-right: 15px;
+}
