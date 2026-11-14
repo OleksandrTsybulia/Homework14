@@ -1,7 +1,7 @@
-@use '../utils/vars';
+@use '../utils/index' as *;
 
 header {
-  background-color: vars.$background-dark-second;
+  background-color: $background-dark-second;
   .container {
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ header {
   a {
     display: block;
     padding: 40px 0;
-    color: vars.$text-color-light;
+    color: $text-color-light;
 
     transition:
       transform 200ms ease-in-out,
@@ -25,7 +25,7 @@ header {
     &:hover,
     &:focus {
       transform: scale(1.5);
-      color: vars.$nav-link-hover;
+      color: $nav-link-hover;
     }
   }
 }

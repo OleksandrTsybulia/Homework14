@@ -12,6 +12,13 @@ ul {
   padding: 0;
 }
 
+#other-information h2, .work-information_about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #192725;
+}
+
 header {
   background-color: #182523;
 }
@@ -58,13 +65,6 @@ header .container {
 .main-information_about p {
   color: #aab5ae;
   line-height: 20px;
-}
-
-#other-information h2, .work-information_about h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #192725;
 }
 
 #work-information {
@@ -219,4 +219,63 @@ a {
   text-align: center;
   top: 0;
   margin-bottom: 10px;
+}
+
+form {
+  font-size: 18px;
+  color: #101817;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=date] {
+  border: 2px solid #101010;
+  border-radius: 4px;
+  background-color: #a9a9a9;
+}
+
+.first-name {
+  color: #a07a40;
+}
+
+textarea {
+  background-color: #a9a9a9;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #303030;
+  color: #66ffcc;
+  border: 2px solid #101010;
+  border-radius: 6px;
+}
+buttonhover {
+  background-color: #303030;
+  color: #707070;
+  border: 2px solid #101010;
+  border-radius: 6px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+td {
+  text-align: right;
+}
+
+th {
+  text-align: center;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.empty-column {
+  border-top: none;
 }/*# sourceMappingURL=main.css.map */

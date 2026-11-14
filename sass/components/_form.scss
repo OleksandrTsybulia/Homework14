@@ -1,0 +1,21 @@
+@use '../utils/index' as *;
+
+form {
+  font-size: 18px;
+  color: $background-dark;
+}
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='date'] {
+  border: 2px solid #101010;
+  border-radius: 4px;
+  background-color: #a9a9a9;
+}
+.first-name {
+  color: #a07a40;
+}
+textarea {
+  background-color: #a9a9a9;
+  border-radius: 6px;
+}

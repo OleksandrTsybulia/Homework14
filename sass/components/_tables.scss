@@ -1,0 +1,18 @@
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+td {
+  text-align: right;
+}
+th {
+  text-align: center;
+}
+.no-border {
+  border-bottom: none;
+}
+.empty-column {
+  border-top: none;
+}

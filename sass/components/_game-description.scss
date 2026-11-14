@@ -1,4 +1,4 @@
-@use '../utils/vars';
+@use '../utils/index' as *;
 
 .game-description {
   display: flex;

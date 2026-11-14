@@ -1,9 +1,8 @@
-@use '../utils/vars';
-@use '../utils/placeholder';
+@use '../utils/index' as *;
 
 #other-information {
   padding: 40px 0;
-  background-color: vars.$text-color-light;
+  background-color: $text-color-light;
 
   h2 {
     @extend %heading-set;
@@ -11,7 +10,7 @@
 
   p {
     #other-information p {
-      color: vars.$background-dark-second;
+      color: $background-dark-second;
       line-height: 20px;
     }
   }

@@ -1,18 +1,17 @@
-@use '../utils/vars';
-@use '../utils/mixin';
+@use '../utils/index' as *;
 
 #contact-us {
-  background-color: vars.$background-dark;
+  background-color: $background-dark;
   padding: 40px 0;
 
   p {
-    color: vars.$text-color-light;
-    @include mixin.font-margin(24px, 15px);
+    color: $text-color-light;
+    @include font-margin(24px, 15px);
   }
 
   a {
-    color: vars.$links-color;
-    border: 1px solid vars.$background-links;
+    color: $links-color;
+    border: 1px solid $background-links;
     border-radius: 4px;
     transition:
       color 0.5s ease-in,
@@ -20,8 +19,8 @@
 
     &:hover,
     &:focus {
-      color: vars.$text-color-light;
-      background-color: vars.$nav-link-hover;
+      color: $text-color-light;
+      background-color: $nav-link-hover;
     }
   }
 }
